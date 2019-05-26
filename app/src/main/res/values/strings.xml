@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ImoocMusic</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
 </resources>

@@ -1,11 +1,8 @@
 package com.imooc.music.zzg.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 import com.imooc.music.zzg.BaseActivity;
-import com.imooc.music.zzg.MainActivity;
 import com.imooc.music.zzg.R;
 
 import java.util.Timer;

@@ -4,14 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.LoginActivity"
     android:orientation="vertical"
+    tools:context=".activity.LoginActivity"
+
     >
-<include layout="@layout/nav_bar"/>
+
+    <include layout="@layout/nav_bar" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/logo"
         android:layout_gravity="center_horizontal"
-        />
+        android:src="@mipmap/logo" />
+
+    <com.imooc.music.zzg.views.InputView
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+
+        app:input_hint="手机号"
+        app:input_icon="@mipmap/phone"
+        app:is_password="false"></com.imooc.music.zzg.views.InputView>
+
+    <View style="@style/line" />
+
+    <com.imooc.music.zzg.views.InputView
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        app:input_hint="密码"
+        app:input_icon="@mipmap/password"
+        app:is_password="true"></com.imooc.music.zzg.views.InputView>
+
+    <View style="@style/line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/marginSize"
+        android:gravity="center"
+        android:onClick="onRegisterClick"
+        android:text="立即注册"
+        android:textColor="@color/mainColor"
+        android:textSize="@dimen/infoSize" />
+
+    <Button
+        style="@style/commitBtn"
+        android:onClick="onRegisterClick"
+        android:text="登   陆" />
 </LinearLayout>

@@ -30,14 +30,17 @@ public class InputView extends FrameLayout {
     private EditText mEtInput;
     public InputView(@Nullable Context context) {
         super(context,null);
+        init(context,null);
     }
 
     public InputView(@Nullable Context context, @Nullable AttributeSet attrs) {
         super(context, attrs,0);
+        init(context,attrs);
     }
 
     public InputView(@Nullable Context context,@Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        init(context,attrs);
     }
     private void init(Context context,AttributeSet attrs){
         if (attrs==null) return ;
